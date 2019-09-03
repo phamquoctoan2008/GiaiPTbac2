@@ -28,15 +28,18 @@ public class MainActivity extends AppCompatActivity {
                 double a = Double.parseDouble(edt_a.getText().toString());
                 double b = Double.parseDouble(edt_b.getText().toString());
                 double c = Double.parseDouble(edt_c.getText().toString());
+
                 XuLy tinh = new XuLy();
-//                if(tinh.Giaipt(a,b,c) == 0)
-//                    txtview_ketqua.setText("Phuong trinh vo so nghiem");
-//                if(tinh.Giaipt(a,b,c) == -1 )
-//                    txtview_ketqua.setText("Phuong trinh vo nghiem");
-//                if(tinh.Giaipt(a,b,c) == 1)
-//                    txtview_ketqua.setText("Phuong trinh co 1 nghiem la \n"+"X = " + tinh.Giaipt(a,b,c));
-//                if(tinh.Giaipt(a,b,c) == 2)
-//                    txtview_ketqua.setText("");
+                if(tinh.Giaipt(a,b,c) == 0)
+                    txtview_ketqua.setText("Phuong trinh vo so nghiem");
+                if(tinh.Giaipt(a,b,c) == -1 )
+                    txtview_ketqua.setText("Phuong trinh vo nghiem");
+                if(tinh.Giaipt(a,b,c) == 1)
+                    txtview_ketqua.setText("Phuong trinh co 1 nghiem la \n"+"X = " + tinh.getX1());
+                if(tinh.Giaipt(a,b,c) == 2)
+                    txtview_ketqua.setText("Phuong trinh co nghiem kep la \n"+"X1 = X2 = "+tinh.getX1());
+                if(tinh.Giaipt(a,b,c) == 3)
+                    txtview_ketqua.setText("Phuong trinh co 2 nghiem\n"+"X1 = "+tinh.getX1()+"\n"+"X2 = "+tinh.getX2());
 
 
 
