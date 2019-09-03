@@ -83,4 +83,11 @@
         android:textSize="20dp"
         android:id="@+id/button_Giai"/>
 
+    <Button
+        android:id="@+id/button_thoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Thoat" />
+
 </LinearLayout>

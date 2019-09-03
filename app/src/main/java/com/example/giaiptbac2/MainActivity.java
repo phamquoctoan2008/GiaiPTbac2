@@ -6,11 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText edt_a, edt_b, edt_c;
     TextView txtview_ketqua;
-    Button btn_giai;
+    Button btn_giai, btn_thoat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         edt_c = findViewById(R.id.editText_C);
         txtview_ketqua = findViewById(R.id.textView_ketqua);
         btn_giai = findViewById(R.id.button_Giai);
+        btn_thoat = findViewById(R.id.button_thoat);
 
         btn_giai.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+            }
+        });
+
+        btn_thoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplication(),"Goodbye: Phạm Quốc Toàn",Toast.LENGTH_LONG).show();
+                finish();
             }
         });
     }

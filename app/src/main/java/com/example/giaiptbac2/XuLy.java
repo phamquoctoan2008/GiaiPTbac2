@@ -35,7 +35,6 @@ public class XuLy {
                 }
                 else
                     return -1;
-
             }
             else
                 x1 = -c/b;
@@ -58,14 +57,4 @@ public class XuLy {
         }
         return 10;
     }
-
-    public double PTvosonghiem (double a, double b, double c){
-        if(a == 0 && b ==0 && c == 0)
-            return 0;
-        return 1;
-        }
-
-
-
-
 }
