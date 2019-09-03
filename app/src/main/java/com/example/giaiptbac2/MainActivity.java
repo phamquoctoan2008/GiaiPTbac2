@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btn_thoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplication(),"Goodbye: Phạm Quốc Toàn",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Goodbye: Phạm Quốc Toàn",Toast.LENGTH_LONG).show();
                 finish();
             }
         });
